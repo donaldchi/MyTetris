@@ -1,5 +1,5 @@
 /*
-  Game Control view class. Show all infomation about the game.
+  Sound Control view class. Control all sound of the game.
   Created by chi on 2016/10/18.
   Copyright © 2016年 chi. All rights reserved.
 */

@@ -19,7 +19,7 @@ public class GameView extends JPanel {
 	private static GameView gScreen = null;
 	private static	int box_width, box_height;
 	private Color boxColor = Color.RED, bgColor = new Color(0,0,0, 40);
-	private EtchedBorder border=new EtchedBorder(EtchedBorder.RAISED,Color.WHITE, new Color(148, 145, 140));
+	private EtchedBorder border=new EtchedBorder(EtchedBorder.RAISED, Color.WHITE, new Color(148, 145, 140));
 
 	private final static int MOVE_RIGHT = 0;
 	private final static int MOVE_LEFT = 1;
@@ -42,7 +42,8 @@ public class GameView extends JPanel {
 
 	public void reset () {
 		int i, j;
-		for (i=boxes.length-1; i>0; i--) 
+		// for (i=boxes.length-1; i>0; i--)
+		for (i=0; i<boxes.length; i++) 
 			for (j=0; j<boxes[i].length; j++) 
 					boxes[i][j].setBoxColor(false);
 	}
@@ -310,7 +311,7 @@ public class GameView extends JPanel {
 				reDrawScreen(i);
 				clearedLines++;
 			}
-				temp=0;
+			temp=0;
 		}
 		return clearedLines;
 	}

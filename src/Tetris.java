@@ -270,6 +270,7 @@ public class Tetris extends JFrame {
                     }
 
                     int curScore = gControl.getScore();
+
                     if(gScreen.isGameOver()) {
                         if(gControl.isInRank()>0)
                             while(true) {

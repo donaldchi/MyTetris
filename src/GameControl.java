@@ -464,7 +464,7 @@ public class GameControl extends JPanel {
 		public void setNextBlock(int blockID) {
 			updateBlock();
 			setBoxColor(blockID);
-			boxes[0][0].setBoxColor(true);
+			// boxes[0][0].setBoxColor(true);
 			int i, nx, ny;
 			for (i=0; i<8; i+=2) {
 				nx = GameBlock.shape[blockID][i];

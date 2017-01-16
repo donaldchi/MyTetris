@@ -3,7 +3,8 @@
   Created by chi on 2016/10/18.
   Copyright © 2016年 chi. All rights reserved.
 */
-public class GameBox implements Cloneable {
+// public class GameBox implements Cloneable {
+public class GameBox {
 	private boolean isColor; //true: if box has color
 
 	public GameBox(boolean isColor) {
@@ -20,13 +21,13 @@ public class GameBox implements Cloneable {
 		return this.isColor;
 	} 
 
-	public Object clone() {
-		Object box = null;
-		try {
-			box = super.clone();
-		} catch (CloneNotSupportedException e) {
-			e.printStackTrace();
-		}
-		return box;
-	}
+	// public Object clone() {
+	// 	Object box = null;
+	// 	try {
+	// 		box = super.clone();
+	// 	} catch (CloneNotSupportedException e) {
+	// 		e.printStackTrace();
+	// 	}
+	// 	return box;
+	// }
 }

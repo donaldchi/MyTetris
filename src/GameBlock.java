@@ -5,7 +5,8 @@
   Copyright © 2016年 chi. All rights reserved.
 */
 
-public class GameBlock extends Thread {
+// public class GameBlock extends Thread {
+public class GameBlock {
 
     public final static int NEXT_BLOCK_ROWS = 4;
     public final static int NEXT_BLOCK_COLS = 4; //each block consists of 4 boxes.
@@ -48,6 +49,7 @@ public class GameBlock extends Thread {
       {0,1,1,0,1,1,1,2},{0,1,1,0,1,1,2,1},{0,0,0,1,0,2,1,1},{0,0,1,0,1,1,2,0} //T形
     };//Rectangular coordinates of each shape, x coordinate first
 
+    //移動する面の数
     public final static int [] isMovableCountVertical = {1,4,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2};
     public final static int [] isMovableCountHorizontal = {4,1,2,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3};
 }
